@@ -29,6 +29,8 @@ export class HeaderComponent implements OnInit {
     this.isloged = false;
     localStorage.removeItem('token');
     localStorage.removeItem('role');
+    localStorage.removeItem('userId');
+
     this.auth.setLoggedIn(false);
     this.auth.loggedUser = null;
     this.auth.loggedUserId = null;
